@@ -2,6 +2,8 @@ import Link from "next/link";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
 import { FaTwitter } from "react-icons/fa";
+import { IoLogoMedium } from "react-icons/io5";
+
 export default function Contact() {
     return (
         <div className="text-slate-400 flex justify-around h-[50vh] items-center">
@@ -21,6 +23,12 @@ export default function Contact() {
                 <Link href="https://twitter.com/Himansh45730152" target="_blank" className="flex items-center gap-4">
                     <FaTwitter />
                     <span className="text-sm"> Twitter </span>
+                </Link>
+            </div>
+            <div className="text-2xl hover:text-white">
+                <Link href="https://medium.com/@hy287719" target="_blank" className="flex items-center gap-4">
+                    <IoLogoMedium />
+                    <span className="text-sm"> Medium </span>
                 </Link>
             </div>
         </div>
