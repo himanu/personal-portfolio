@@ -5,17 +5,21 @@ const Navbar = () => {
     const [isClosed, setIsClosed] = useState("true");
 
     return (
-        <nav className="shadow-lg">
-            <div className="relative px-4 py-3 flex justify-between items-center">
+        <nav className="shadow-lg mb-12" style={{zIndex: "100"}}>
+            <div className="px-4 py-3 flex justify-between items-center">
                 {/* Logo or Brand (you can add your logo or brand here) */}
-                <div className="flex items-center rounded-full border-2 border-white w-9 h-9">
+                <div className="flex items-center rounded-full border-2 border-white w-9 h-9"
+                    style={{ zIndex: "100" }}
+                >
                     <a href="/" className="text-white font-semibold text-md mx-auto">
                         H
                     </a>
                 </div>
 
                 {/*Hamburger menu for mobile */}
-                <div className="flex sm:hidden items-center">
+                <div className="flex sm:hidden items-center"
+                    style={{ zIndex: "100" }}
+                >
                     <button
                         className="text-white focus:outline-none"
                         onClick={() => {
@@ -50,7 +54,19 @@ const Navbar = () => {
                 <div
                     className={`absolute sm:relative sm:flex sm:items-center sm:w-auto ${isClosed ? "hidden" : ""}`}
                     style={{
-                        top: "100%"
+                        zIndex: "100",
+                        ...(
+                            !isClosed && {
+                                top: "100px",
+                                background: "black",
+                                zIndex: 100,
+                                opacity: 0.9,
+                                width: "100vw",
+                                paddingLeft: "15%",
+                                paddingBottom: "10px",
+                                left: "0"
+                            }
+                        )
                     }}
                 >
                     <div className="text-md">
