@@ -18,7 +18,10 @@ const Navbar = () => {
                 <div className="flex sm:hidden items-center">
                     <button
                         className="text-white focus:outline-none"
-                        onClick={() => setIsClosed((closed) => !closed)}
+                        onClick={() => {
+                            setIsClosed((closed) => !closed);
+                            console.log("Hii");
+                        }}
                         aria-label="Toggle Menu"
                     >
                         <svg
@@ -50,28 +53,28 @@ const Navbar = () => {
                         top: "100%"
                     }}
                 >
-                    <div className="text-lg">
+                    <div className="text-md">
                         <a
                             href="/"
-                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-4"
+                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-10"
                         >
                             Home
                         </a>
                         <a
                             href="/blog"
-                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-4"
+                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-10"
                         >
                             Blog
                         </a>
                         <a
                             href="/about"
-                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-4"
+                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-10"
                         >
                             About
                         </a>
                         <a
                             href="/contact"
-                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-4"
+                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-10"
                         >
                             Contact
                         </a>
