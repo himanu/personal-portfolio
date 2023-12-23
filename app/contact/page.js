@@ -6,7 +6,7 @@ import { IoLogoMedium } from "react-icons/io5";
 
 export default function Contact() {
     return (
-        <div className="text-slate-400 flex flex-wrap justify-around h-[50vh] items-center">
+        <div className="text-slate-400 flex flex-col sm:flex-row justify-around h-[50vh] items-center">
             <div className="text-2xl hover:text-white">
                 <Link href="https://www.linkedin.com/in/himanshu-yadav-7554161b2/" target="_blank" className="flex items-center gap-4">
                     <IoLogoLinkedin />
