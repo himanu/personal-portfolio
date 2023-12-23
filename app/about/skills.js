@@ -10,7 +10,7 @@ export default function Skills() {
                 <button className="px-3 py-1 bg-black-400" >NextJS</button>
                 <button className="px-3 py-1 bg-violet-400" >NodeJS</button>
                 <button className="px-3 py-1 bg-rose-400" >Firebase</button>
-                <button className="px-3 py-1 bg-cyan-700" >Svelete</button>
+                <button className="px-3 py-1 bg-cyan-700" >Svelte</button>
                 <button className="px-3 py-1 bg-teal-800" >Jenkins</button>
                 <button className="px-3 py-1 bg-green-400" >RTL & Jest</button>
                 <button className="px-3 py-1 bg-yellow-900" >CSS</button>

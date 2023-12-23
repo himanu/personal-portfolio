@@ -55,7 +55,8 @@ export default function Projects() {
             {/* Project list wrapper */}
             <div className="mt-4 mb-6 pt-6 flex"
                 style={{
-                    transform: `translateX(-${100 * projectIndex}%)`
+                    transform: `translateX(-${100 * projectIndex}%)`,
+                    transition: "transform 0.25s ease-in-out 0.25s"
                 }}
             >
                 {/* // eslint-disable-next-line react/jsx-key */}
@@ -92,6 +93,7 @@ export default function Projects() {
                                     )}
                                     {project.liveDemo && (
                                         <Link href={project.liveDemo}
+                                            target="_blank"
                                             className="hover:text-slate-300 text-sm text-slate-400 underline underline-offset-1"
                                         >
                                             Live Demo
