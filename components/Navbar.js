@@ -1,5 +1,6 @@
 "use client"
 import React, {useState} from 'react';
+import Dropdown from './Dropdown';
 
 const Navbar = () => {
     const [isClosed, setIsClosed] = useState("true");
@@ -82,12 +83,9 @@ const Navbar = () => {
                         >
                             Blog
                         </a>
-                        <a
-                            href="/about"
-                            className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-10"
-                        >
-                            About
-                        </a>
+                        <span className='mr-10'>
+                            <Dropdown titleLink="/about" title="About" options={[{ label: "Brief Intro", link: "/about#intro" }, { label: "Skills", link: "/about#skills" }, { label: "Projects", link: "/about#projects" }, { label: "Programming", link: "/about#cp" }]} />
+                        </span>
                         <a
                             href="/contact"
                             className="block sm:inline-block mt-4 sm:mt-0 text-white hover:text-gray-300 mr-10"

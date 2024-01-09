@@ -17,7 +17,7 @@ const About = () => {
             <Projects />
 
             <div className="mt-20">
-                <div className="text-xl underline underline-offset-8">
+                <div className="text-xl underline underline-offset-8" id="cp">
                     Competitive Programming Coding Portfolio
                 </div>
 
