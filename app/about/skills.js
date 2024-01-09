@@ -1,7 +1,7 @@
 export default function Skills() {
     return (
         <div className="mt-20">
-            <div className="text-xl underline underline-offset-8">
+            <div className="text-xl underline underline-offset-8" id="skills">
                 Skills
             </div>
             <div className="mt-4 mb-6 pt-6 text-white text-sm flex gap-2 flex-wrap">

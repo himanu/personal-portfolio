@@ -5,7 +5,7 @@ export default function BriefIntro() {
     return (
         <div >
             
-            <div className="text-xl underline underline-offset-8">
+            <div className="text-xl underline underline-offset-8" id="intro">
                 Brief Intro
             </div>
             <Link href="https://drive.google.com/file/d/1V1S7wmoO42nmZLyIJSUvs1tOqrsuHpd5/view?usp=drive_link" target="_blank"

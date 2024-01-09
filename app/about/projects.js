@@ -48,7 +48,7 @@ export default function Projects() {
 
     return (
         <div className="my-20 overflow-hidden relative">
-            <div className="text-xl underline underline-offset-8">
+            <div className="text-xl underline underline-offset-8" id="projects">
                 Projects
             </div>
 
