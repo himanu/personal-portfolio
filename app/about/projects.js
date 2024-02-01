@@ -11,7 +11,15 @@ const projects = [{
     github: "https://github.com/himanu/Task-Tracker-React",
     liveDemo: "https://track-tasks-12.netlify.app/",
     image: "/task-tracker.png"
-}, {
+}, 
+    {
+        name: "Expense-Tracker",
+        title: "OCR Powered Expense Tracker, users can upload receipt images and it will automatically create expenses for them.",
+        github: "https://github.com/himanu/expense_tracker",
+        liveDemo: "https://fir-384a7.web.app/",
+        image: "/expense-tracker.png"
+    },
+{
     name: "Codename",
     title: "Codename is a game played between two teams each having atleast two member. Each team have a master member who will give clues to his fellow members so that they can select correct word in matrix.",
     github: "https://github.com/himanu/codename",
